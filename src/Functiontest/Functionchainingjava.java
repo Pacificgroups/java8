@@ -10,6 +10,7 @@ public class Functionchainingjava {
         Function<Integer,Integer> li2=(g)-> g*g;
 
         System.out.println(li2.andThen(li).apply(4));
+
         System.out.println(li.compose(li2).apply(4));
     }
 }
